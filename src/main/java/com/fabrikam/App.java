@@ -119,20 +119,20 @@ public class App {
             dataLakeFileSystemClient.getDirectoryClient("mydirsforlisting" + System.currentTimeMillis()).create();
         }
 
-        /*
-         * List the path(s) in our file system.
-         */
-        dataLakeFileSystemClient.listPaths()
-            .forEach(pathItem -> System.out.println("Path name: " + pathItem.getName()));
+        // /*
+        //  * List the path(s) in our file system.
+        //  */
+        // dataLakeFileSystemClient.listPaths()
+        //     .forEach(pathItem -> System.out.println("Path name: " + pathItem.getName()));
 
-        /*
-         * Delete the file we created earlier.
-         */
-        fileClient.delete();
+        // /*
+        //  * Delete the file we created earlier.
+        //  */
+        // fileClient.delete();
 
-        /*
-         * Delete the file system we created earlier.
-         */
-        dataLakeFileSystemClient.delete();
+        // /*
+        //  * Delete the file system we created earlier.
+        //  */
+        // dataLakeFileSystemClient.delete();
     }
 }
